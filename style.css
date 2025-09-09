@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+/*Navigation*/
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 4rem;
+}
+
+.logo {
+  height: 3.2rem;
+}
+
+.nav-list li {
+  list-style: none;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+}
+
+.nav-list .nav-list-item:link,
+.nav-list .nav-list-item:visited {
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #333;
+  transition: all 0.3s;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+}
+
+.nav-list .nav-list-item:hover,
+.nav-list .nav-list-item:active {
+  background-color: #d2d375;
+}
+
+.all-tours:link,
+.all-tours:visited {
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #333;
+  transition: all 0.3s;
+  color: #fff;
+  background-color: #294023;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+}
+
+.all-tours:hover,
+.all-tours:active {
+  color: #333;
+  background-color: #d2d375;
+}
+
+/*Section main*/
+.section-main {
+  background-image: url(img/section-hero-background.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+  background-position: center;
+  height: 57rem;
+  margin: 0rem 3.9rem;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heading-primary {
+  font-size: 6.5rem;
+  text-align: center;
+  color: #fff;
+}
+
+.main-text {
+  text-align: center;
+  font-size: 1.7rem;
+  color: #cecece;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.main-link:link,
+.main-link:visited {
+  display: inline-block;
+  font-size: 1.7rem;
+  text-align: center;
+  margin-left: 10.5rem;
+  padding-bottom: 1rem;
+  color: #cecece;
+  text-decoration: none;
+  border-bottom: 1.5px solid #cecece;
+}
