@@ -13,7 +13,18 @@ body {
   font-family: "Inter", sans-serif;
 }
 
-/*Navigation*/
+.container {
+  max-width: 127rem;
+  margin-inline: auto;
+}
+
+.grid-three-cols {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3.9rem;
+}
+
+/*NAVIGATION*/
 .header {
   display: flex;
   justify-content: space-between;
@@ -69,7 +80,7 @@ body {
   background-color: #d2d375;
 }
 
-/*Section main*/
+/*SECTION MAIN*/
 .section-main {
   background-image: url(img/section-hero-background.webp);
   background-repeat: no-repeat;
@@ -100,12 +111,243 @@ body {
 
 .main-link:link,
 .main-link:visited {
-  display: inline-block;
+  position: relative;
   font-size: 1.7rem;
   text-align: center;
-  margin-left: 10.5rem;
   padding-bottom: 1rem;
   color: #cecece;
   text-decoration: none;
-  border-bottom: 1.5px solid #cecece;
+}
+
+.main-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1.5px;
+  background: #cecece;
+  transform: scaleX(1);
+  transform-origin: left;
+  transition: transform 0.3s ease-in;
+}
+
+.main-link:hover::after {
+  transform: scaleX(0);
+  transform-origin: right;
+}
+
+.main-link-icon {
+  font-size: 3.7rem;
+  cursor: pointer;
+  color: #cecece;
+}
+
+.link-box {
+  display: flex;
+  align-items: center;
+}
+
+.center {
+  justify-content: center;
+}
+
+/*SECTION-ABOUT-US*/
+.section-about-us {
+  padding: 10rem 0 10rem 0;
+}
+
+.about-us-pic-1 {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+
+.about-us-text {
+  align-self: cente;
+}
+
+.section-icon {
+  font-size: 1.4rem;
+  color: #c0c0c0;
+}
+
+.subheading {
+  font-size: 1.4rem;
+  color: #c0c0c0;
+  font-weight: 200;
+  display: inline-block;
+  margin-bottom: 3rem;
+}
+
+.section-heading {
+  font-size: 3.5rem;
+  color: #444;
+  font-weight: 300;
+  margin-bottom: 3rem;
+}
+
+.section-text {
+  font-size: 1.8rem;
+  font-weight: 200;
+  color: #a1a1a1;
+  /*margin-bottom: 3rem;*/
+}
+
+.color-link:link,
+.color-link:visited {
+  color: #444;
+  margin-top: 3rem;
+}
+
+.color-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1.5px;
+  background: #444;
+  transform: scaleX(1);
+  transform-origin: left;
+  transition: transform 0.3s ease-in;
+}
+
+.color-link:hover::after {
+  transform: scaleX(0);
+  transform-origin: right;
+}
+
+.color-icon {
+  color: #444;
+  margin-top: 3rem;
+}
+
+.about-us-pic-2 {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  grid-row: 1/3;
+  grid-column: 3/4;
+}
+
+.priority-heading {
+  font-size: 1.8rem;
+  color: #444;
+  border-top: 1px solid #cecece;
+  padding-top: 1.6rem;
+  margin-bottom: 1.7rem;
+}
+
+.priority-text {
+  font-size: 1.5rem;
+  color: #a1a1a1;
+  font-weight: 200;
+  flex-basis: 38rem;
+}
+
+.priority-text-icon {
+  display: flex;
+  gap: 0.7rem;
+}
+
+.wite {
+  opacity: 0;
+  pointer-events: 0;
+  visibility: hidden;
+}
+
+/*SECTION SERVICES*/
+.section-services {
+  padding-bottom: 10rem;
+}
+
+.service-description-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.margin-bottom-sm {
+  margin-bottom: 6rem;
+}
+/*probaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa*/
+.grid-three-cols {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; /* sidebar, photo, description */
+  gap: 2rem;
+  font-family: "Inter", sans-serif;
+  align-items: start;
+}
+
+/* Sidebar */
+.sidebar {
+  display: grid;
+  gap: 2rem;
+}
+
+.sidebar .tab {
+  background: #e8e6d9;
+  border: none;
+  padding: 2rem;
+  font-size: 1.7rem;
+  cursor: pointer;
+  text-align: left;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+
+.sidebar .tab.active {
+  background: #2c4624;
+  color: #fff;
+}
+
+/* Content area spans across column 2 and 3 */
+.content {
+  grid-column: 2 / 4; /* spans photo + description columns */
+  width: 100%;
+}
+
+/* Each tab content is a 2-column grid inside content */
+.tab-content {
+  display: none;
+  grid-template-columns: 1fr 1fr; /* photo left, text right */
+  gap: 2rem;
+  animation: fadeIn 0.4s ease;
+}
+
+.tab-content.active {
+  display: grid;
+}
+
+.photo img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 2rem;
+  color: #444;
+}
+
+.description p {
+  color: #a1a1a1;
+  margin-top: 2rem;
+  font-size: 1.8rem;
+  font-weight: 200;
+  line-height: 2.5rem;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
