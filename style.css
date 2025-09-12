@@ -24,6 +24,11 @@ body {
   padding: 10rem 25rem 10rem 25rem;
 }
 
+.grid-two-cols {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
 .grid-three-cols {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -442,7 +447,7 @@ body {
 
 /*PROBA*/
 .project {
-  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.07);
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.1);
   border-radius: 11px;
   overflow: hidden;
   transition: all 0.3s;
@@ -453,65 +458,84 @@ body {
 }
 
 .project-content {
-  padding: 3.2rem 4.8rem;
+  padding: 3.2rem 2rem;
 }
 
 .project-image {
   width: 100%;
+  border-radius: 11px;
 }
 
 .project-tags {
   margin-bottom: 1.2rem;
 }
 
-.tag {
-  display: inline-block;
-  padding: 0.4rem 0.8rem;
-  font-size: 1.2rem;
-  text-transform: uppercase;
-  background-color: #59e00a;
-  font-weight: 600;
-  color: #333;
-  border-radius: 9px;
-}
-
-.tag-js {
-  display: inline-block;
-  padding: 0.4rem 0.8rem;
-  font-size: 1.2rem;
-  background-color: #e0b90a;
-  font-weight: 600;
-  color: #333;
-  border-radius: 9px;
-}
-
 .project-heading {
-  font-size: 2.4rem;
+  font-size: 2.1rem;
   color: #333;
   font-weight: 600;
   margin-bottom: 3.2rem;
 }
 
-.project-data {
-  list-style: none;
+.destination-buttons {
+  margin-top: 3.2rem;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   gap: 2rem;
 }
 
-.project-detail {
-  font-size: 1.8rem;
+.more-info:link,
+.more-info:visited {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: #444;
+  padding: 1rem 2rem;
+  border: 1px solid #294023;
+  border-radius: 8px;
+}
+
+.more-info:hover,
+.more-info:active {
+  background-color: #d2d375;
+  border: 1px solid #d2d375;
+}
+
+.book:link,
+.book:visited {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: #fff;
+  background-color: #294023;
+  padding: 1rem 3.5rem;
+  border: 1px solid #294023;
+  border-radius: 8px;
+}
+
+.book:hover,
+.book:active {
+  background-color: #d2d375;
+  color: #444;
+  border: 1px solid #d2d375;
+}
+
+/*SECTION ADVANTAGES*/
+.section-advantages {
+  padding-bottom: 10rem;
+}
+
+.section-advantages-left {
+  padding-right: 25rem;
+}
+
+.advantages {
   display: flex;
-  align-items: center;
-  gap: 1.6rem;
+  flex-direction: column;
+  gap: 3rem;
 }
 
-.project-detail-data {
-  line-height: 1.6;
-}
-
-.project-icon {
-  color: #004aad;
-  height: 2.4rem;
-  width: 2.4rem;
+.advantage-block {
+  background-color: #f0f0f0;
+  display: flex;
+  padding: 4rem 3rem;
+  border-radius: 20px;
 }
