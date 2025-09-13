@@ -539,3 +539,24 @@ body {
   padding: 4rem 3rem;
   border-radius: 20px;
 }
+
+/*SECTION EXPLORE GREECE*/
+.explore-greece {
+  background-image: url(img/explore-greece-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+  background-position: center;
+  height: 57rem;
+  margin: 0rem 3.9rem;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*SECTION REVIEWS*/
+.reviews {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
