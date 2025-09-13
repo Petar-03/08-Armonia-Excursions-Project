@@ -297,7 +297,7 @@ body {
 .grid-three-cols {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr; /* sidebar, photo, description */
-  gap: 2rem;
+  gap: 3rem;
   font-family: "Inter", sans-serif;
   align-items: start;
 }
@@ -524,7 +524,7 @@ body {
 }
 
 .section-advantages-left {
-  padding-right: 25rem;
+  padding-right: 20rem;
 }
 
 .advantages {
@@ -559,4 +559,82 @@ body {
 .reviews {
   padding-top: 10rem;
   padding-bottom: 10rem;
+}
+
+.review {
+  background-color: #f0f0f0;
+  padding: 3rem 3rem;
+  border-radius: 20px;
+}
+
+.review-star {
+  max-width: 2rem;
+}
+
+.stars-container {
+  margin-bottom: 2rem;
+}
+
+.person-review {
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: #444;
+}
+
+.person-review-text {
+  font-size: 1.2rem;
+  color: #a1a1a1;
+}
+
+/*SECTION SUPPORT*/
+.section-support {
+  padding-bottom: 10rem;
+}
+
+.faq-container {
+  margin-top: 1rem;
+}
+
+.faq-item {
+  border-bottom: 1px solid #ccc;
+  padding: 4.5rem 0;
+}
+
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #444;
+}
+
+.faq-icon {
+  font-size: 3rem;
+  transition: transform 0.3s ease;
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.4s ease;
+  color: #a1a1a1;
+  font-size: 1.6rem;
+  font-weight: 200;
+  line-height: 1.5;
+  padding-right: 2.5rem;
+}
+
+.faq-item.active .faq-answer {
+  max-height: 50rem;
+  opacity: 1;
+  margin-top: 1rem;
+}
+
+.faq-item.active .faq-icon {
+  transform: rotate(45deg);
 }
