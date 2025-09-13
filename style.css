@@ -24,6 +24,11 @@ body {
   padding: 10rem 25rem 10rem 25rem;
 }
 
+.container-get-in-touch {
+  background-color: #f0f0f0;
+  padding: 10rem 0 10rem 0;
+}
+
 .grid-two-cols {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -637,4 +642,63 @@ body {
 
 .faq-item.active .faq-icon {
   transform: rotate(45deg);
+}
+
+/*SECTION GET IN TOUCH*/
+.section-get-in-touch {
+  padding-bottom: 10rem;
+}
+
+.touch-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icon {
+  margin-bottom: 3rem;
+}
+
+.touch-heading {
+  font-size: 1.7rem;
+  font-weight: 500;
+  color: #444;
+  text-align: center;
+  margin-bottom: 1.3rem;
+}
+
+.touch-text {
+  font-size: 1.5rem;
+  color: #a1a1a1;
+  font-weight: 200;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.touch-link:link,
+.touch-link:visited {
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  color: #444;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.touch-req-btn:link,
+.touch-req-btn:visited {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.7rem;
+  color: #fff;
+  background-color: #294023;
+  padding: 1.5rem 0 1.5rem 0;
+  border-radius: 10px;
+}
+
+.touch-req-btn:hover,
+.touch-req-btn:active {
+  color: #444;
+  background-color: #d2d375;
 }
