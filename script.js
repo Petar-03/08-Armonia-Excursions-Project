@@ -25,3 +25,27 @@ faqs.forEach((item) => {
     item.classList.toggle("active");
   });
 });
+
+//CTA FORM
+// Get elements
+const openBtn = document.getElementById("openPopup");
+const modal = document.getElementById("popupForm");
+const closeBtn = document.querySelector(".close");
+
+// Open popup
+openBtn.addEventListener("click", function (e) {
+  e.preventDefault();
+  modal.style.display = "block";
+});
+
+// Close popup (X button)
+closeBtn.addEventListener("click", function () {
+  modal.style.display = "none";
+});
+
+// Close popup when clicking outside
+window.addEventListener("click", function (event) {
+  if (event.target === modal) {
+    modal.style.display = "none";
+  }
+});

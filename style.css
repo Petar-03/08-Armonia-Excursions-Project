@@ -702,3 +702,183 @@ body {
   color: #444;
   background-color: #d2d375;
 }
+
+/* Popup modal background */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+/* Popup content box */
+.modal-content {
+  background: #fdfdf5;
+  margin: 8% auto;
+  padding: 6rem 6rem 6rem 6rem;
+  border-radius: 12px;
+  width: 60rem;
+  max-width: 90%;
+  position: relative;
+  text-align: left;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+  animation: fadeDown 0.3s ease;
+}
+
+/* Animation */
+@keyframes fadeDown {
+  from {
+    transform: translateY(-30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Close button (X) */
+.close {
+  position: absolute;
+  right: 2rem;
+  top: 1rem;
+  font-size: 8rem;
+  font-weight: 200;
+  color: #333;
+  cursor: pointer;
+}
+
+/* Form styling */
+.form-heading {
+  font-size: 3rem;
+  color: #444;
+  text-align: center;
+  font-weight: 200;
+}
+
+.modal-content form input,
+.modal-content form textarea {
+  width: 100%;
+  margin: 1.7rem 0;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1.4rem;
+}
+
+.modal-content form textarea {
+  height: 8rem;
+  resize: none;
+}
+
+.modal-content form label {
+  font-size: 1.4rem;
+  display: block;
+  margin: 1rem 0;
+}
+
+.modal-content form .btn {
+  background: #244d24;
+  color: #fff;
+  border: none;
+  padding: 1.2rem;
+  width: 100%;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1.6rem;
+}
+
+.modal-content form .btn:hover {
+  background: #d2d375;
+  color: #444;
+}
+
+/*FOOOOTER*/
+.footer {
+  background-color: #1f301a; /* dark green */
+  color: #f4f4f4;
+  padding: 6rem;
+  margin: 0 3.9rem 1rem 3.9rem;
+  font-family: "Inter", sans-serif;
+  border-radius: 20px;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+.footer-left {
+  color: #d4c94d; /* gold-yellow */
+}
+
+.footer-left .tagline {
+  font-size: 1.6rem;
+  margin: 1rem 0;
+}
+
+.footer-left .license {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+
+.footer-column h4 {
+  font-size: 14px;
+  color: #aaa;
+  margin-bottom: 1.5rem;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 3rem;
+}
+
+.footer-column ul li a,
+.footer-column p,
+.footer-column a {
+  color: #f4f4f4;
+  text-decoration: none;
+  font-size: 1.4rem;
+  margin-bottom: 3rem;
+}
+
+.footer-column a:hover {
+  color: #d4c94d;
+}
+
+.footer-bottom {
+  border-top: 1px solid #444;
+  margin-top: 30px;
+  padding-top: 15px;
+  text-align: center;
+  font-size: 13px;
+  color: #888;
+}
+
+/*PAGE OUR TOURS*/
+.section-header-our-tours {
+  padding: 10rem 0 10rem 0;
+}
+
+.heading-our-tours {
+  font-size: 6rem;
+  color: #444;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+
+.page-our-tours-main-image {
+  border-radius: 20px;
+}
