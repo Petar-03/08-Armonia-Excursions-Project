@@ -880,5 +880,26 @@ body {
 }
 
 .page-our-tours-main-image {
+  max-width: 100%;
   border-radius: 20px;
 }
+
+/*SECTION ALL TOURS*/
+.all-tours-text {
+  text-align: center;
+  font-size: 2rem;
+  color: #444;
+  margin-bottom: 10rem;
+}
+
+/*PAGE TRANSFERS*/
+/*SECTION MAIN TRANSFERS*/
+.section-transfers-text-flex {
+  display: flex;
+}
+
+.heading-our-tours {
+  flex-basis: 230rem;
+}
+
+/*SECTION VIECHLES*/
