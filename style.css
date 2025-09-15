@@ -961,7 +961,7 @@ body {
 }
 
 .card:hover {
-  background: #d2d375; 
+  background: #d2d375;
 }
 
 .grid-column {
@@ -969,4 +969,35 @@ body {
   width: 50%;
   justify-self: center;
   margin-top: 7rem;
+}
+
+/*PAGE ACCESSIBILITY*/
+/*PAGE ACCESSIBILITY MAIN*/
+.heading-our-tours-accessible-basis {
+  flex-basis: 109rem;
+}
+
+/*SECTION OUR APPROACH*/
+.section-our-approach {
+  padding-bottom: 10rem;
+}
+
+.second-heading {
+  grid-column: 2/4;
+}
+
+.our-approach-image {
+  max-width: 100%;
+  border-radius: 20px;
+}
+
+.approach-icon {
+  margin-bottom: 5rem;
+}
+
+.approach-heading {
+  font-size: 2rem;
+  color: #444;
+  font-weight: 500;
+  margin-bottom: 3rem;
 }
