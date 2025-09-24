@@ -1,0 +1,152 @@
+/*Below 1246px*/
+@media (max-width: 78em) {
+  .grey-container-heading {
+    font-size: 4rem;
+  }
+
+  .more-info:link,
+  .more-info:visited {
+    font-size: 1.2rem;
+    padding: 1rem 1.2rem;
+  }
+
+  .book:link,
+  .book:visited {
+    font-size: 1.2rem;
+    padding: 1rem 2.6rem;
+  }
+  html {
+    font-size: 56.25%;
+  }
+}
+
+/*Below 944px*/
+@media (max-width: 59em) {
+  html {
+    font-size: 50%;
+  }
+
+  .grey-container-heading {
+    font-size: 3.2rem;
+  }
+
+  .customer-expirience {
+    font-size: 1.4rem;
+  }
+}
+
+/*Below 832px*/
+@media (max-width: 52em) {
+  .main-text {
+    font-size: 1.5rem;
+  }
+
+  .grid-three-cols-about-us {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .about-us-pic-1 {
+    grid-column: 1/2;
+  }
+
+  .about-us-text {
+    grid-column: 2/4;
+    grid-row: 1/2;
+  }
+
+  .about-us-pic-2 {
+    grid-column: 1/4;
+    grid-row: 4/5;
+    height: 50rem;
+  }
+
+  .grid-col-priority {
+    grid-column: 1/2;
+  }
+
+  .grid-col-priority-2 {
+    grid-column: 2/4;
+  }
+
+  .grid-three-cols-services {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .sidebar {
+    grid-column: 1/4;
+    grid-template-columns: 2fr 2fr 1fr 2fr;
+  }
+
+  .content {
+    grid-column: 1/4;
+  }
+
+  .grey-container {
+    padding: 7rem 5rem 7rem 5rem;
+  }
+
+  .grid-four-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .section-advantages-left {
+    padding-right: 6rem;
+  }
+
+  .heading-primary {
+    font-size: 4.5rem;
+  }
+
+  .grid-three-cols-reviews {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .section-transfers-text-flex {
+    display: block;
+  }
+
+  .page-our-tours-main-image {
+    margin-top: 4rem;
+  }
+
+  .grid-three-cols-transfers {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .our-approach-heading {
+    grid-column: 1/3;
+  }
+
+  .second-heading {
+    grid-column: 1/3;
+  }
+  /*bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb*/
+  .grid-three-cols-our-aproach {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .grid-three-cols-destinations {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .project-height {
+    height: 56rem;
+  }
+
+  .grid-three-cols-us-about {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .about-us-heading {
+    grid-column: 1/3;
+  }
+
+  .about-us-text-html {
+    grid-column: 1/3;
+    grid-row: 2/3;
+  }
+}
+
+/*Below 700px*/
+@media (max-width: 43.75em) {
+}

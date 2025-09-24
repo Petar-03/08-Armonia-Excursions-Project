@@ -102,6 +102,24 @@ body {
   background-color: #d2d375;
 }
 
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+
+  display: none;
+}
+
+.icon-mobile-nav {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: #333;
+}
+
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
+}
+
 /*SECTION MAIN*/
 .section-main {
   background-image: url(img/section-hero-background.webp);
@@ -177,6 +195,7 @@ body {
 /*SECTION-ABOUT-US*/
 .section-about-us {
   padding: 10rem 0 10rem 0;
+  margin: 0rem 3.9rem;
 }
 
 .about-us-pic-1 {
@@ -287,6 +306,7 @@ body {
 /*SECTION SERVICES*/
 .section-services {
   padding-bottom: 10rem;
+  margin: 0rem 3.9rem;
 }
 
 .service-description-flex {
@@ -382,6 +402,7 @@ body {
 /*SECTION CLIENTS*/
 .section-clients {
   padding-bottom: 10rem;
+  margin: 0rem 3.9rem;
 }
 
 .section-icon-flex-center {
@@ -427,9 +448,10 @@ body {
   color: #444;
 }
 
-/*CLIENTS*/
+/*DESTINATIONS*/
 .section-destinations {
   padding-bottom: 10rem;
+  margin: 0rem 3.9rem;
 }
 
 .section-heading-inline {
@@ -526,6 +548,7 @@ body {
 /*SECTION ADVANTAGES*/
 .section-advantages {
   padding-bottom: 10rem;
+  margin: 0rem 3.9rem;
 }
 
 .section-advantages-left {
@@ -564,6 +587,7 @@ body {
 .reviews {
   padding-top: 10rem;
   padding-bottom: 10rem;
+  margin: 0rem 3.9rem;
 }
 
 .review {
@@ -596,6 +620,7 @@ body {
 /*SECTION SUPPORT*/
 .section-support {
   padding-bottom: 10rem;
+  margin: 0rem 3.9rem;
 }
 
 .faq-container {
@@ -870,6 +895,7 @@ body {
 /*PAGE OUR TOURS*/
 .section-header-our-tours {
   padding: 10rem 0 10rem 0;
+  margin: 0rem 3.9rem;
 }
 
 .heading-our-tours {
@@ -896,6 +922,7 @@ body {
 /*SECTION MAIN TRANSFERS*/
 .section-transfers-text-flex {
   display: flex;
+  justify-content: space-between;
 }
 
 .heading-our-tours {
@@ -906,6 +933,7 @@ body {
 
 .section-vehicle {
   padding-bottom: 10rem;
+  margin: 0rem 3.9rem;
 }
 
 .card {
@@ -974,12 +1002,13 @@ body {
 /*PAGE ACCESSIBILITY*/
 /*PAGE ACCESSIBILITY MAIN*/
 .heading-our-tours-accessible-basis {
-  flex-basis: 109rem;
+  flex-basis: 70rem;
 }
 
 /*SECTION OUR APPROACH*/
 .section-our-approach {
   padding-bottom: 10rem;
+  margin: 0rem 3.9rem;
 }
 
 .second-heading {
@@ -1011,6 +1040,7 @@ body {
 /*SECTION ABOUT US*/
 .about-us {
   padding-bottom: 10rem;
+  margin: 0rem 3.9rem;
 }
 
 .about-us-heading {

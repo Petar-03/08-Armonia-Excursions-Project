@@ -43,6 +43,11 @@
         </ul>
       </nav>
       <a href="our-tours.html" class="all-tours">Book a Tour</a>
+
+       <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </button>
     </header>
     <main>
       <!--HERO SECTION-->
@@ -69,7 +74,7 @@
       </section>
       <!--SECTION ABOUT US-->
       <section class="section-about-us">
-        <div class="container grid-three-cols">
+        <div class="container grid-three-cols grid-three-cols-about-us">
           <img
             class="about-us-pic-1"
             src="img/about-us-pic-1.webp"
@@ -97,7 +102,8 @@
             </div>
           </div>
           <img class="about-us-pic-2" src="img/about-us-pic-2.webp" />
-          <div class="priority">
+      
+          <div class="priority grid-col-priority">
             <h3 class="section-heading">Why Choose Us?</h3>
             <p class="priority-heading">Professional Team</p>
             <div class="priority-text-icon">
@@ -111,7 +117,7 @@
               ></ion-icon>
             </div>
           </div>
-          <div class="priority">
+          <div class="priority grid-col-priority-2">
             <h3 class="section-heading wite">Why Choose Us?</h3>
             <p class="priority-heading">Flexibility</p>
             <div class="priority-text-icon">
@@ -125,6 +131,7 @@
               ></ion-icon>
             </div>
           </div>
+        
         </div>
       </section>
       <!--SECTION SERVICES-->
@@ -146,7 +153,7 @@
 
           <!--PROBAAAA-->
 
-          <div class="grid-three-cols">
+          <div class="grid-three-cols grid-three-cols-services">
             <!-- Sidebar -->
             <div class="sidebar">
               <button class="tab active" data-tab="private">
@@ -576,7 +583,7 @@
               <h3 class="section-heading">
                 What our clients say about us
               </h3>
-              <div class="grid-three-cols">
+              <div class="grid-three-cols grid-three-cols-reviews">
                 <div class="review">
                   <div class="stars-container">
                     <img class="review-star" src="img/review-star-pic.png">
