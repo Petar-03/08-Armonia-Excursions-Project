@@ -300,4 +300,9 @@
   .our-team-topic {
     grid-column: 1/2;
   }
+
+  .cta-text {
+    padding: 0 3.9rem;
+    text-align: center;
+  }
 }
