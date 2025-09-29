@@ -149,4 +149,155 @@
 
 /*Below 700px*/
 @media (max-width: 43.75em) {
+  .section-heading {
+    font-size: 3.2rem;
+  }
+
+  /*MOBILE NAV*/
+  .btn-mobile-nav {
+    display: block;
+    z-index: 1100;
+  }
+
+  .nav {
+    position: absolute;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.9);
+    text-align: center;
+    padding: 4rem 0;
+    transition: top 0.3s ease-in-out;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+
+  .header.open-nav .nav {
+    top: 5rem;
+  }
+
+  .header.open-nav .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+  .header.open-nav .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+
+  .section-destination-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/*BELOW 500PX*/
+@media (max-width: 31.25em) {
+  .grid-three-cols-about-us {
+    grid-template-columns: 1fr;
+  }
+
+  .about-us-text {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+
+  .about-us-pic-1 {
+    grid-column: 1/2;
+  }
+
+  .grid-col-priority {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+
+  .grid-col-priority-2 {
+    grid-column: 1/2;
+    grid-row: 4/5;
+  }
+
+  .about-us-pic-2 {
+    grid-column: 1/2;
+    grid-row: 5/6;
+  }
+
+  .sidebar {
+    grid-template-columns: 1fr;
+  }
+
+  .text-align-center-services {
+    text-align: center;
+  }
+
+  .tab-content {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-four-cols {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-two-cols {
+    grid-template-columns: 1fr;
+  }
+
+  .advantages {
+    margin-top: 4rem;
+  }
+
+  .heading-primary {
+    font-size: 3.5rem;
+  }
+
+  .grid-three-cols-reviews {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-three-cols {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-left {
+    grid-column: 1/3;
+  }
+
+  .footer-logo {
+    max-width: 27rem;
+  }
+
+  .footer {
+    padding: 2rem;
+  }
+
+  .heading-our-tours {
+    font-size: 4.5rem;
+  }
+
+  .our-approach-img {
+    grid-column: 1/2;
+  }
+
+  .accessible-content {
+    grid-column: 1/2;
+  }
+
+  .grey-container-heading {
+    font-size: 2.8rem;
+  }
+
+  .our-vehicles {
+    grid-column: 1/2;
+  }
+
+  .vehicle-pic {
+    grid-column: 1/2;
+  }
+
+  .our-team-topic {
+    grid-column: 1/2;
+  }
 }

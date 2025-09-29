@@ -49,3 +49,30 @@ window.addEventListener("click", function (event) {
     modal.style.display = "none";
   }
 });
+
+const btnNavEl = document.querySelector(".btn-mobile-nav");
+const headerEl = document.querySelector(".header");
+const navEl = document.querySelector(".nav");
+
+// Отваряне/затваряне при бутон
+btnNavEl.addEventListener("click", function (e) {
+  e.stopPropagation();
+  headerEl.classList.toggle("open-nav");
+});
+
+// Затваряне при клик навън
+document.addEventListener("click", function (e) {
+  const isClickInsideNav = navEl.contains(e.target);
+  const isClickOnBtn = btnNavEl.contains(e.target);
+
+  if (!isClickInsideNav && !isClickOnBtn) {
+    headerEl.classList.remove("open-nav");
+  }
+});
+
+// Затваряне при клик върху линковете
+navEl.querySelectorAll("a").forEach((link) => {
+  link.addEventListener("click", () => {
+    headerEl.classList.remove("open-nav");
+  });
+});
